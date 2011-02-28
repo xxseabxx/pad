@@ -1,0 +1,9 @@
+<% helpers.includeCss("plugins/citeTag/citeTag.css"); %>
+<a href="javascript:void(0)" title="Select language" onclick="citeTag.citeTagClicked();"><img src="/static/html/plugins/citeTag/zotero_logo.gif"></a>
+<div id="citeTag-language-selector">
+  <ul>
+   <li><a href="javascript:void(0)" onclick="citeTag.citeTagSelectLangClicked('[1]');">Becker et al</a></li>
+   <li><a href="javascript:void(0)" onclick="citeTag.citeTagSelectLangClicked('[2]');">Michal Hoezlnll</a></li>
+   <li><a href="javascript:void(0)" onclick="citeTag.citeTagSelectLangClicked('[3]');">avesta</a></li>
+  </ul>
+</div>
