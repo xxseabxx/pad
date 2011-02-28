@@ -9,7 +9,7 @@ function licenseTagClicked () {
 }
 
 function licenseTagSelectLicenseClicked(license) {
-  padeditor.ace.replaceRange(undefined, undefined, " #license:" + license + " ");
+  padeditor.ace.replaceRange(undefined, undefined, " #cite:" + license + " ");
   padeditor.ace.focus();
   $('#licenseTag-license-selector').toggle();
 }
