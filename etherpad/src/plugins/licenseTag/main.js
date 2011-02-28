@@ -6,7 +6,7 @@ function licenseTagInit() {
  this.hooks = ['twitterStyleTagsTagSelector'];
  this.description = 'License tag inserter (for twitterStyleTags).';
  this.client = new main.licenseTagInit();
- //this.twitterStyleTagsTagSelector = hooks.tagSelectors;
+ this.twitterStyleTagsTagSelector = hooks.tagSelectors;
  this.install = install;
  this.uninstall = uninstall;
 }
