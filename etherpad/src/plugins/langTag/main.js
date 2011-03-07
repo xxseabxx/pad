@@ -20,6 +20,10 @@ function langTagInit() {
 URL url = null;
 url = new URL("https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa");
 BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+while ((inputLine = in.readLine()) != null)
+		{
+		println("zotero rest"+ inputLine);
+		}
 
 }
 
