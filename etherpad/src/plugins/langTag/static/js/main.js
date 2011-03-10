@@ -11,7 +11,7 @@ function langTagClicked () {
   
   requestCrossDomain(path, function(results) {
 	var cite=results.split("<div class='csl-entry'>");
-
+	$('#cites').append('<li> test</li>');
 	alert(cite[0]);
 		
 	});
