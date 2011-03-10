@@ -9,6 +9,7 @@ function langTagInit() {
  this.twitterStyleTagsTagSelector = hooks.tagSelectors;
  this.install = install;
  this.uninstall = uninstall;
+
 }
 
 function install() {
