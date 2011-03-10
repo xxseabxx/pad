@@ -2,7 +2,6 @@ function langTagInit() {
   this.hooks = [];
   this.langTagClicked = langTagClicked;
   this.langTagSelectLangClicked = langTagSelectLangClicked;
-	
   
 }
 
@@ -12,7 +11,7 @@ function langTagClicked () {
   
   requestCrossDomain(path, function(results) {
 	var cite=results.split("<div class='csl-entry'>");
-	$("#cites").append('<li><a href='javascript:void(0)'>Neue Liste</a></li>');
+
 	alert(cite[0]);
 		
 	});
