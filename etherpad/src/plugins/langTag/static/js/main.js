@@ -12,8 +12,8 @@ function langTagClicked () {
   
   requestCrossDomain(path, function(results) {
 	var cite=results.split("<div class='csl-entry'>");
-	$("#langTag-language-selector").append('<li><a href='javascript:void(0)'>Neue Liste</a></li>');
-		alert(results);
+	$("#cites").append('<li><a href='javascript:void(0)'>Neue Liste</a></li>');
+	alert(cite[0]);
 		
 	});
   $('#langTag-language-selector').toggle();
