@@ -6,14 +6,11 @@ function langTagInit() {
 }
 
 function langTagClicked () {
-
-	 var path = 'https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa';
-  
-  requestCrossDomain(path, function(results) {
+	var path = 'https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa';
+	requestCrossDomain(path, function(results) {
 	var cite=results.split("<div class='csl-entry'>");
 	alert(cite[0]);
-	$('#cites').append('<li> <a href="javascript:void(0)" onclick="langTag.langTagSelectLangClicked("2");">'+cite[1]+'</a></li>');
-
+	$('#cites').append('<li> <a href='javascript:void(0)' onclick='langTag.langTagSelectLangClicked('2');'>'+cite[1]+'</a></li>');
 	});
   $('#langTag-language-selector').toggle();
   
