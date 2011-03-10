@@ -2,16 +2,17 @@ function langTagInit() {
   this.hooks = [];
   this.langTagClicked = langTagClicked;
   this.langTagSelectLangClicked = langTagSelectLangClicked;
-  var path = 'https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa';
 	
-	requestCrossDomain(path, function(results) {
-		alert("hallo");
-	});
   
 }
 
 function langTagClicked () {
+
+	 var path = 'https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa';
   
+  requestCrossDomain(path, function(results) {
+		alert("hallo");
+	});
   $('#langTag-language-selector').toggle();
   
 }
