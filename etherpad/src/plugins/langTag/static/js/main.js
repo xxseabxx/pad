@@ -2,7 +2,7 @@ function langTagInit() {
   this.hooks = [];
   this.langTagClicked = langTagClicked;
   this.langTagSelectLangClicked = langTagSelectLangClicked;
-  // funktioniert nicht
+  // funktioniert nicht, Plugin geht gar nicht
   // $('#cites').append('<li><a href="javascript:void(0)">ON TAG INIT</a></li>');
   
 }
@@ -12,10 +12,12 @@ function langTagClicked () {
 	requestCrossDomain(path, function(results) {
 		var cite=results.split("<div class='csl-entry'>");
 		alert(cite[0]);
-		//funktioniert teilweise
+		// funktioniert teilweise
 		$('#cites').append('<li><a href="javascript:void(0)">ON CALLBACK</a></li>');
-		$('#cites').append('<li><a href="javascript:void(0)">'cite[1]'</a></li>');
+		// funktioniert nicht, Plugin geht gar nicht
+		// $('#cites').append('<li><a href="javascript:void(0)">'cite[1]'</a></li>');
 	});
+	
 	//funktioniert
 	$('#cites').append('<li><a href="javascript:void(0)">ON TAG CLICK</a></li>');
   $('#langTag-language-selector').toggle();
