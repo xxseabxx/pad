@@ -2,6 +2,7 @@ function langTagInit() {
   this.hooks = [];
   this.langTagClicked = langTagClicked;
   this.langTagSelectLangClicked = langTagSelectLangClicked;
+  $('#cites').append('<li><a href="javascript:void(0)">ON TAG INIT</a></li>');
   
 }
 
