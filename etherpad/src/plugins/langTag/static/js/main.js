@@ -7,14 +7,12 @@ function langTagInit() {
 
 function langTagClicked () {
 	var path = 'https://api.zotero.org/users/188286/collections/ZUD7JW6D/items?apiKey=3atnk1bqyhdej89qlapv2ueq&format=bib&style=apa';
-	var items[];
 	requestCrossDomain(path, function(results) {
 		var cite=results.split("<div class='csl-entry'>");
 		alert(cite[0]);
 	
 	});
-	items.push('<li><a href="javascript:void(0)">NICE ONE</a></li>');
-	$('#cites').append( items.join('') );
+	$('#cites').append('<li><a href="javascript:void(0)">ON TAG CLICK</a></li>');
   $('#langTag-language-selector').toggle();
   
 }
