@@ -13,13 +13,14 @@ function langTagClicked () {
 		var cite=results.split("<div class='csl-entry'>");
 		alert(cite[0]);
 		// funktioniert teilweise
-		$('#cites').append('<li><a href="javascript:void(0)">ON CALLBACK</a></li>');
+		//$('#cites').append('<li><a href="javascript:void(0)">ON CALLBACK</a></li>');
 		// funktioniert nicht, Plugin geht gar nicht
+		$('#cites').append('<li><a href="javascript:void(0)">' + cite[1] + '</a></li>') 
 		// $('#cites').append('<li><a href="javascript:void(0)">'cite[1]'</a></li>');
 	});
 	
 	//funktioniert
-	$('#cites').append('<li><a href="javascript:void(0)">ON TAG CLICK</a></li>');
+	//$('#cites').append('<li><a href="javascript:void(0)">ON TAG CLICK</a></li>');
   $('#langTag-language-selector').toggle();
   
 }
