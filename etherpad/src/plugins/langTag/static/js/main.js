@@ -15,7 +15,7 @@ function langTagClicked () {
 		// funktioniert teilweise
 		//$('#cites').append('<li><a href="javascript:void(0)">ON CALLBACK</a></li>');
 		// funktioniert nicht, Plugin geht gar nicht
-		$('#cites').append('<li><a href="javascript:void(0)">' + cite[1] + '</a></li>') 
+		$('#cites').append('<li><a href="javascript:void(0)">' + cite[0] + '</a></li>') 
 		// $('#cites').append('<li><a href="javascript:void(0)">'cite[1]'</a></li>');
 	});
 	
